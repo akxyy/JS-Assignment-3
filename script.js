@@ -2,7 +2,7 @@
 let things = { a: 'one', b: '2', f: '5', c: '33', p: 'do', q: 'one' }
 
 let Keys = Object.keys(things);
-let Keys_Reversed = Keys.reverse();
+let Keys_Reversed = Keys.toReversed();
 console.log(Keys_Reversed);
 
 // 2.{ data: [{a:'one', id:'22'}, {a:'four', id:'7'}, {a:'six', b:'2'},  {a:'sixty', id:'24'},  {a:'five', id:'212'}] }
@@ -44,7 +44,7 @@ function checkHTTPS() {
 }
 checkHTTPS();
 
-function alert() {
+function alert(value) {
     setTimeout(() => {
         alert('Alert after 10 seconds');
     }, 10000);
